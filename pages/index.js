@@ -74,7 +74,7 @@ const Home = () => {
   };
 
   const handlerSortByPopulation = ({ target: { value } }) => {
-    if (sortPopulationAsc === Number(value)) return setSortPopulationAsc(0);
+    if (sortPopulationAsc === Number(value)) return setSortPopulationAsc("");
 
     setSortPopulationAsc(Number(value));
   };
@@ -240,6 +240,7 @@ const CardCountryName = styled.div`
   align-items: center;
   display: flex;
   justify-content: center;
+  text-align: center;
   width: 100%;
 `;
 
